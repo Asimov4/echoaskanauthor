@@ -35,7 +35,7 @@ app.post('/echo', function (req, res) {
       responseText = "Sorry I didn't catch that, which book are you reading?";
   } else {
       if (requestType == "LaunchRequest") {
-          responseText = "What's up, bro? " + bookYouAreReading;
+          responseText = bookYouAreReading;
       } else {
         var intentName = intent.name;
         slots  = intent.slots;
@@ -54,7 +54,7 @@ app.post('/echo', function (req, res) {
         if (intentName == 'SelectBook') {
             var book = slots.Book.value;
             console.log("book" + book);
-            responseText = "That book is the bomb. What should I ask Douglas Adams?";
+            responseText = "What should I ask Douglas Adams?";
         }
         
         if (intentName == 'Yes') {
