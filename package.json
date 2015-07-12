@@ -1,0 +1,12 @@
+{
+  "name": "alexa-example",
+  "version": "0.0.0",
+  "description": "An Alexa App Example.",
+  "main": "server.js",
+  "repository": "",
+  "author": "Thibaut Labarre",
+  "dependencies": {
+    "express": "~3.2.4",
+    "body-parser": "1.8"
+  }
+}
