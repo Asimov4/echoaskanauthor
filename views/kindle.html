@@ -1110,12 +1110,27 @@ Preparing your report, please wait…
 <div id="obrMessageBar" style='display:none;'> </div>
 <div id='royaltiesEarned' class='a-box a-color-offset-background'><div class='a-box-inner'>
 <div class="a-column a-span6"><img src="h.jpg"></div> 
-<font size ="2" color ="red">Question : What was the inspiration for the anti hero Arthur Dent? ?</font><br>
-Asked by @brendenFortuner on 11 July 2015<br>
+<div id="deleteMe">
+<font size ="2" color ="red">Question : What was the inspiration for the anti hero Arthur Dent?</font><br>
+Asked by @brendanFortuner on 11 July 2015<br>
 <div class ='a-column a-span6 a-span-last'><textarea maxlength ="1000"></textarea></div>
 <div id="content" class="a-section a-text-left"></div>
-<span class="a-button"><span class="a-button-inner"><button class="a-button-text" type="button">Post a Reply</button></span></span><br>
+<span class="a-button"><span class="a-button-inner"><button onClick="$('#showMe').show();$('#deleteMe').remove();" class="a-button-text" type="button">Post a Reply</button></span></span>
+</div><br>
+
 <hr><h3>Answered Question</h3>
+<div id="showMe" style="display:none">
+<div id="content" class="a-section a-text-left"><font size ="2" color ="blue">Question : What was the inspiration for the anti hero Arthur Dent?</font><br>
+Asked by @brendanFortuner on 11 July 2015<br>
+<br>
+<div class ='a-column a-span6 a-span-last'>
+<font size ="2" color ="black">
+Arthur Dent is a fictitious character that <a href>... Read more</a></font>
+<br>
+<br>
+<br></div>
+</div>
+</div>
 <div id="content" class="a-section a-text-left"><font size ="2" color ="blue">Question : Why did you choose 42 as the Answer to the Ultimate Question of Life, the Universe, and Everything?</font><br>
 Asked by @poojaShukla on 12 July 2015<br>
 
@@ -1130,13 +1145,13 @@ The answer to this is very simple. It was a joke. It had to be a number, an ordi
 </div>
 <div id='royaltiesEarned' class='a-box a-color-offset-background'><div class='a-box-inner'>
 <div class="a-column a-span6"><img src="thelong.jpg"></div> 
-<div id="content" class="a-section a-text-left"><font size ="2" color ="red">Question : Why did you chose this title for this book</font><br>
+<div id="content" class="a-section a-text-left"><font size ="2" color ="red">Question : Why did you chose this title for this book?</font><br>
 Asked by @poojaShukla on 12 July 2015<br>
 <div class ='a-column a-span6 a-span-last'><textarea maxlength ="1000"></textarea></div>
 <span class="a-button"><span class="a-button-inner"><button class="a-button-text" type="button">Post a Reply</button></span></span><br>
 
-<font size ="2" color ="red">Question : What was the inspiration for the anti hero Arthur Dent? ?</font><br>
-Asked by @brendenFortuner on 11 July 2015<br>
+<font size ="2" color ="red">Question : How long did it take for you to write this book?</font><br>
+Asked by @brendanFortuner on 11 July 2015<br>
 <div class ='a-column a-span6 a-span-last'><textarea maxlength ="1000"></textarea></div>
 <div id="content" class="a-section a-text-left"></div>
 <span class="a-button"><span class="a-button-inner"><button class="a-button-text" type="button">Post a Reply</button></span></span><br>
@@ -1345,7 +1360,7 @@ obrHandler= new IRA.OBR({
 "yAxisTitle":    "Units",
 "errorMessage": "We are working to update these reports. Please check back soon.",
 "languageCode":"en_US",
-"noBooksMessage":"Your published books"
+"noBooksMessage":"Questions asked by readers for your Published Books"
 }
 );
 poHandler = new IRA.PREORDERS({
